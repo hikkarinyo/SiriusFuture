@@ -1,0 +1,64 @@
+@import '../../assets/styles/colors';
+
+.checkbox {
+  display: flex;
+  align-items: center;
+
+  &__input {
+    border: 0;
+    clip: rect(0 0 0 0);
+    clippath: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+  &__box {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: white;
+    border: 1px solid #C8C5CD;
+    border-radius: 2px;
+    transition: all 150ms;
+    cursor: pointer;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 4px;
+      top: 1px;
+      width: 6px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      transform: rotate(0);
+      opacity: 0;
+      transition: all 150ms;
+    }
+
+    &--checked {
+      background: $secondary;
+
+      &::after {
+        transform: rotate(45deg);
+        opacity: 1;
+      }
+    }
+  }
+
+  &__label {
+    margin-left: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.2px;
+    text-align: left;
+    color: #79747F;
+  }
+}

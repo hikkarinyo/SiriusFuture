@@ -1,0 +1,42 @@
+@import 'colors';
+
+@font-face {
+  font-family: 'Circe Rounded';
+  src: url('../../assets/fonts/CirceRounded-Regular4.eot');
+  src: local('Circe Rounded  Regular 4'), local('CirceRounded-Regular4'),
+  url('../../assets/fonts/CirceRounded-Regular4.eot?#iefix') format('embedded-opentype'),
+  url('../../assets/fonts/CirceRounded-Regular4.woff2') format('woff2'),
+  url('../../assets/fonts/CirceRounded-Regular4.woff') format('woff'),
+  url('../../assets/fonts/CirceRounded-Regular4.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  color: $text-color;
+  background-color: $bg-color;
+  font-family: 'Circe Rounded', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}

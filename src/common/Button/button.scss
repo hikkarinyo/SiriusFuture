@@ -1,0 +1,33 @@
+@import '../../assets/styles/colors';
+
+.button {
+  background-color: $bg-default-button;
+  color: $text-button;
+  border: 1px solid $bg-default-button;
+  min-width: 211px;
+  height: 48px;
+  box-sizing: border-box;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  padding: 10px 86px 10px 86px;
+  gap: 8px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22.5px;
+
+  &:hover,
+  &:active {
+    background: $bg-hover-button;
+    color: $text-button;
+  }
+
+  &:disabled {
+    background: $bg-disabled-button;
+    cursor: default;
+    color: $text-color;
+    border: 1px dashed $text-color;
+    border-spacing: 7px ;
+  }
+}
